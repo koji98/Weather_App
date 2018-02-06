@@ -1,0 +1,66 @@
+<% include partials/headerLocation %>
+
+  <div class="top" id="<%=data["weather"][0]["icon"]%>">
+
+    <% var currentTime = new Date(); %>
+    <h1> <%= data["name"] %> (<%= query %>)</h1>
+    <p>as of <%= currentTime.getHours() %>:<%= currentTime.getMinutes() %></p>
+
+  </div>
+
+
+  <div id="container">
+
+
+    <div class="weatherStatsMain grow">
+
+      <h2>Humidity</h2>
+      <h3> <%= data["main"]["humidity"] %>%</h3>
+
+      <h2>Wind</h2>
+        <h3><%= data["wind"]["speed"] %> mph</h3>
+
+
+      <!-- <p>Pressure
+        <h3><%= data["main"]["pressure"] %> mb</h3>
+      </p> -->
+    </div>
+
+
+    <div class="weatherStatsMain grow" >
+
+      <img src="http://openweathermap.org/img/w/<%= data["weather"][0]["icon"]%>.png" id="image">
+      <h2> <%= data["weather"][0]["description"] %> </h2>
+      <p>Currently is <%= Math.round( (9/5) * (Number(data["main"]["temp"]) - 273) + 32 ) %>&#176; </p>
+      <p>High of <%= Math.round( (9/5) * (Number(data["main"]["temp_max"]) - 273) + 32 ) %>&#176;</p>
+      <p>Low of <%= Math.round( (9/5) * (Number(data["main"]["temp_min"]) - 273) + 32 ) %>&#176;</p>
+      <br>
+
+    </div>
+
+    <div class="weatherStatsMain grow">
+
+      <h2>Sunrise</h2>
+      <% var secUp = data["sys"]["sunrise"]; %>
+      <% var localUp = new Date(secUp * 1000); %>
+      <% var timestrUp = localUp.toLocaleTimeString(); %>
+      <h3> <%= timestrUp %></h3>
+      <h2>Sunset</h2>
+      <% var secDown = data["sys"]["sunset"]; %>
+      <% var localDown = new Date(secDown * 1000); %>
+      <% var timestrDown = localDown.toLocaleTimeString(); %>
+      <h3><%= timestrDown %></h3>
+
+
+    </div>
+
+
+    <div class="search grow">
+
+      <a href="/">Search <i class="fa fa-search" aria-hidden="true"></i></a>
+
+    </div>
+
+
+</div>
+<% include partials/footer %>

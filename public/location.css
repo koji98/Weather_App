@@ -1,0 +1,227 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /* hides horizontal scroll bar */
+  overflow-x: hidden;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-family: 'Macondo', cursive;
+  background: linear-gradient(to bottom, rgba(135, 206, 250, 1), rgba(25, 25, 112, 1));
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+}
+
+footer a {
+  display: block;
+}
+
+.top {
+  margin: 0;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 6px black;
+  border: 2px solid black;
+  box-shadow: 0 0 10em white;
+  border-radius: 1px;
+  border: none;
+  top: 0;
+  padding: 1px;
+}
+
+.top p {
+  font-size: 150%;
+}
+
+.top [id="03n"] {
+  background: red;
+}
+
+.search {
+  background: #1F1C2C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cff3fc,#928DAB, #cff3fc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f2f3f4, #1F1C2C, #f2f3f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 0 1em black;
+  width: 15%;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+a {
+  color: white;
+}
+
+#container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: center;
+}
+
+.weatherStatsMain {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 32%;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  height: 12em;
+}
+
+.weatherStatsMain p {
+  font-size: 17px;
+}
+
+.weatherStatsMain #image {
+  height: 4em;
+  float: right;
+}
+
+
+.grow {
+  transition: all .3s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.21);
+}
+
+
+[id="01d"] {
+  background-image: url("https://images.unsplash.com/photo-1502623547075-299b5ba76c53?auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+[id="01n"] {
+  background-image: url("https://images.unsplash.com/photo-1443741730691-880d28ac6552?auto=format&fit=crop&w=1502&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+[id="02d"] {
+  background-image: url("https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/sun-clouds-blue-sky-14641020076aM.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+[id="02n"] {
+  background-image: url("https://polysyllabicprofundities.files.wordpress.com/2013/01/clouds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="03d"] {
+  background-image: url("https://images.unsplash.com/photo-1438045809872-34a58ff469f6?auto=format&fit=crop&w=2661&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="03n"] {
+  background-image: url("https://slm-assets1.secondlife.com/assets/4749819/lightbox/el_cielo_y_la_luna-1280x800.jpg?1323712655");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="04d"] {
+  background-image: url("https://img00.deviantart.net/6364/i/2017/030/4/1/broken_clouds_by_kevintheman-dax9bd4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="04n"] {
+  background-image: url("https://i.pinimg.com/originals/36/0f/f0/360ff076c9dff58b067937278dc87e3f.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="09d"] {
+  background-image: url("https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=1334&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="09n"] {
+  background-image: url("https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=1334&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="10d"] {
+  background-image: url("http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-weather-clouds-tornado-rain-cyclone-flashlights-awesome/wallpaper-drops-of-rain-from-sky-weather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="10n"] {
+  background-image: url("http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-weather-clouds-tornado-rain-cyclone-flashlights-awesome/wallpaper-drops-of-rain-from-sky-weather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="11d"] {
+  background-image: url("https://images.unsplash.com/photo-1504123010103-b1f3fe484a32?auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="11n"] {
+  background-image: url("https://www.kamloopsbcnow.com/files/files/images/lightning%20-%201(1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="13d"] {
+  background-image: url("http://vunature.com/wp-content/uploads/2016/11/trees-nature-blizzard-flakes-seasons-snowing-snow-white-landscapes-winter-storm-snowfall-forest-image-wallpapers-1920x1080.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="13n"] {
+  background-image: url("http://vunature.com/wp-content/uploads/2016/11/trees-nature-blizzard-flakes-seasons-snowing-snow-white-landscapes-winter-storm-snowfall-forest-image-wallpapers-1920x1080.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="50d"] {
+  background-image: url("https://images.unsplash.com/photo-1463171515643-952cee54d42a?auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[id="50n"] {
+  background-image: url("https://images.unsplash.com/photo-1463171515643-952cee54d42a?auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<% function isValidUSZip(sZip) { %>
+<%   return /^\d{5}(-\d{4})?$/.test(sZip); %>
+<% } %>
+
+<form action="/location" method="GET">
+  <input name="zipCode" type="number" placeholder="Enter Zipcode">
+  <button>Go</button>
+</form>
+
+
+
+
+
+<% include partials/footer %>

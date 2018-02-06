@@ -1,0 +1,122 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(https://orig00.deviantart.net/d62d/f/2017/266/b/1/b186447e0f6137728d267c3a09d31c6e-d5bs80m.png), linear-gradient(to bottom, rgba(135, 206, 250, 1), rgba(25, 25, 112, 1));
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.circle {
+  background-color: rgba(254, 249, 27, .97);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 100em rgb(254, 249, 27), 0 0 2em black;
+}
+
+.circle p {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10%;
+  font-family: 'Macondo', cursive;
+}
+
+.circle .weather {
+  font-size: 30px;
+}
+
+footer {
+  width: 100%;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 36%
+}
+
+form input {
+  padding: 12px 20px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, .82);
+  font-family: 'Macondo', cursive;
+}
+
+input:focus {
+  box-shadow: 0 0 10px rgb(254, 249, 27);
+  background-color: rgba(255, 255, 255, .3);
+  outline: none;
+  font-weight: bold;
+  font-family: 'Macondo', cursive;
+  color: rgb(254, 249, 27);
+}
+
+button {
+  padding: 12px 20px;
+  outline: none;
+  font-size: 1.5em;
+  background-color: rgba(254, 249, 27, .7);
+  border-radius: 4px;
+  font-family: 'Macondo', cursive;
+}
+
+button:hover {
+  animation-name: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: .05s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  50% {
+    background-color: rgba(255, 249, 14, .75);
+  }
+  100% {
+    transform: scale(1.15);
+    background-color: rgba(254, 249, 27, .5);
+  }
+  0% {
+    transform: scale(.6);
+    background-color: rgba(255, 249, 0, .9);
+    border-radius: 50%;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
